@@ -16,7 +16,7 @@ ActiveRecord::Schema.define(version: 20141028044546) do
   create_table "invoices", force: true do |t|
     t.datetime "date"
     t.string   "company"
-    t.decimal  "tax"
+    t.decimal  "tax",         precision: 10, scale: 0
     t.string   "salesperson"
     t.datetime "created_at"
     t.datetime "updated_at"
